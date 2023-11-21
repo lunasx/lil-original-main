@@ -6,12 +6,13 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     background-color: #faf6f5;
     color: black;
     padding: 50px;
     overflow: hidden;
-    font-family: 'Roboto' !important; 
+    font-family: 'Roboto' !important;
 }
 
 ::selection {
@@ -72,18 +73,32 @@ html, body {
     font-size: 2em;
 }
 
-
-/* PARTICLE TEXT */
-#magic {
-
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -9999;
-}
-
 /* RESPONSIVE */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    html,
+    body {
+        padding: 15px;
+    }
+
+    .center .subtitle {
+        font-size: 1.2em;
+    }
+
+    .center .title {
+        font-size: 4em;
+    }
+
+    .center .description {
+        font-size: 1.2em;
+    }
+
+    .bottom .date {
+        font-size: 1.2em;
+    }
+
+    .top .box {
+        width: 40px;
+        height: 40px;
+        background-color: #d9d9d9;
+    }
+}
