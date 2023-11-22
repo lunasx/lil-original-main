@@ -160,33 +160,137 @@ body {
     width: 290px;
 }
 
-/* RESPONSIVE */
-@media only screen and (max-width: 1000px) {
+/* MOBILE - RESPONSIVE */
+.mobile-live-date {
+    display: none;
+}
 
-    html,
-    body {
-        padding: 15px;
+.mobile-barcode {
+    display: none;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+.contact-mobile {
+    display: none;
+    margin-top: 50px;
+}
+
+.contact-mobile .contact-container {
+    display: flex;
+    flex-direction: column;
+    border: #BFEA88 1px solid;
+    width: 300px;
+}
+
+.contact-mobile .contact-container .contact-top {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px;
+    border-bottom: #BFEA88 solid 1px;
+}
+
+.contact-mobile .contact-container .contact-top .contact-info {
+    width: 67%;
+    border-right: #BFEA88 1px solid;
+    padding: 20px 0 20px 20px;
+}
+
+.contact-mobile .contact-container .contact-top .contact-info .text {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    text-transform: uppercase;
+    letter-spacing: 0.40px;
+}
+
+.contact-mobile .contact-container .contact-top .contact-icon {
+    width: 33%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact-mobile .contact-container .contact-bottom {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.951rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.40px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    padding: 20px 0 20px 25px;
+}
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 500px) {
+    .center {
+        height: calc(100vh - 115px) !important;
+    }
+
+    .mobile-live-date img {
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-mobile {
+        display: block;
+    }
+
+    .top .contact-container {
+        display: none;
+    }
+
+    .mobile-barcode {
+        display: block;
+    }
+
+    .top-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .center {
+        height: calc(100vh - 180px);
     }
 
     .center .subtitle {
-        font-size: 1.2em;
+        font-size: 1.2rem;
+        line-height: 40px;
+        margin: 0;
     }
-
+    
     .center .title {
-        font-size: 4em;
+        font-size: 2.8rem;
+        margin: 0;  
+        line-height: 55px;
     }
-
+    
     .center .description {
-        font-size: 1.2em;
+        font-size: 0.75rem;
+        margin: 0;
     }
 
-    .bottom .date {
-        font-size: 1.2em;
+    .bottom {
+        display: none;
     }
 
-    .top .box {
-        width: 40px;
-        height: 40px;
-        background-color: #d9d9d9;
+    .mobile-live-date {
+        display: block;
+    }
+
+    .mobile-live-date img {
+        width: 100%;
+        height: 100px;
     }
 }
