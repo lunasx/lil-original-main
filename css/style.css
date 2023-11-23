@@ -231,7 +231,7 @@ body {
 /* RESPONSIVE */
 @media only screen and (max-width: 500px) {
     .center {
-        height: calc(100vh - 115px) !important;
+        height: calc(100vh - 150px) !important;
     }
 
     .mobile-live-date img {
