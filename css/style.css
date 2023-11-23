@@ -28,7 +28,7 @@ body {
     color: #BFEA88;
     padding: 20px;
     overflow: hidden;
-    height: 100vh; /* Düzeltme: Hesaplamalı yükseklikten kaldırıldı */
+    height: 100vh;
     background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.27) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%), url("../img/background.webp");
     background-size: cover;
     background-position: center;
@@ -291,9 +291,18 @@ a {
     .mobile-bottom .mobile-live-date img {
         height: auto !important;
     }
+    
+    body {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.27) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%), url("../img/background-mobile.webp");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
+
     .contact-mobile {
         display: block;
     }
