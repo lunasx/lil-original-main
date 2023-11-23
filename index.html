@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/hnm2ktc.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <meta property="og:title" content="Lil Original">
-    <meta property="og:description" content="We create harmony between people and brands. Human centered design agency.">
+    <meta property="og:description"
+        content="We create harmony between people and brands. Human centered design agency.">
     <meta property="og:image" content="img/meta-image.png">
 </head>
 
@@ -309,6 +310,16 @@
     <div class="mobile-live-date">
         <img src="img/mobile-live-date.webp" alt="mobile live date">
     </div>
+
+    <script>
+        document.cookie.split(";").forEach(function (c) {
+            document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+        });
+
+        localStorage.clear();
+
+        sessionStorage.clear();
+    </script>
 </body>
 
 </html>
