@@ -40,6 +40,11 @@ body {
     background: #BFEA88;
 }
 
+a {
+    color: #BFEA88;
+    text-decoration: none;
+}
+
 /* TOP */
 .top {
     display: flex;
@@ -165,6 +170,10 @@ body {
     display: none;
 }
 
+.mobile-live-date img {
+    border-radius: 2px;
+}
+
 .mobile-barcode {
     display: none;
 }
@@ -193,14 +202,14 @@ body {
 }
 
 .contact-mobile .contact-container .contact-top .contact-info {
-    width: 67%;
+    width: 60%;
     border-right: #BFEA88 1px solid;
-    padding: 20px 0 20px 20px;
+    padding: 15px 0 15px 15px;
 }
 
 .contact-mobile .contact-container .contact-top .contact-info .text {
     font-family: 'Inter', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-style: normal;
     font-weight: 300;
     line-height: 120%;
@@ -209,29 +218,32 @@ body {
 }
 
 .contact-mobile .contact-container .contact-top .contact-icon {
-    width: 33%;
+    width: 40%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .contact-mobile .contact-container .contact-bottom {
     width: 100%;
+    padding: 15px 0 15px 20px;
+}
+
+.contact-mobile .contact-container .contact-bottom .contact-email {
     font-family: 'Inter', sans-serif;
-    font-size: 0.951rem;
+    font-size: 0.95rem;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
     letter-spacing: 0.40px;
     text-decoration-line: underline;
     text-transform: uppercase;
-    padding: 20px 0 20px 25px;
 }
 
 
 /* RESPONSIVE */
 @media only screen and (max-width: 500px) {
     .center {
-        height: calc(100vh - 180px) !important;
+        height: calc(100vh - 200px) !important;
     }
 
     .mobile-live-date img {
@@ -269,13 +281,13 @@ body {
         line-height: 40px;
         margin: 0;
     }
-    
+
     .center .title {
         font-size: 2.8rem;
-        margin: 0;  
+        margin: 0;
         line-height: 55px;
     }
-    
+
     .center .description {
         font-size: 0.75rem;
         margin: 0;
