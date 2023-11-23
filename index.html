@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Lil Original</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/hnm2ktc.css">
@@ -315,13 +316,24 @@
     </div>
 
     <script>
-        document.cookie.split(";").forEach(function (c) {
-            document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
-        });
+        if (window.caches && window.caches.keys) {
+            caches.keys().then(function (cacheNames) {
+                cacheNames.forEach(function (cacheName) {
+                    caches.delete(cacheName);
+                });
+            });
+        }
 
-        localStorage.clear();
+        if (window.caches && window.caches.keys) {
+            window.caches.keys().then(function (cacheNames) {
+                cacheNames.forEach(function (cacheName) {
+                    window.caches.delete(cacheName);
+                });
+            });
+        }
 
-        sessionStorage.clear();
+        window.localStorage.clear();
+        window.sessionStorage.clear();
     </script>
 </body>
 
