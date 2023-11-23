@@ -43,8 +43,9 @@ body {
 }
 
 a {
-    color: #BFEA88;
-    text-decoration: none;
+    color: inherit;
+    text-decoration: none !important;
+    border-bottom: #BFEA88 1px solid;
 }
 
 /* TOP */
@@ -99,7 +100,6 @@ a {
     font-weight: 600;
     line-height: 120%;
     letter-spacing: 0.40px;
-    text-decoration-line: underline;
     text-transform: uppercase;
     padding: 20px 0 20px 35px;
 }
@@ -190,7 +190,7 @@ a {
 }
 
 .mobile-bottom .mobile-live-date .text {
-    width: 130px;
+    width: 110px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -200,16 +200,17 @@ a {
 .mobile-bottom .mobile-live-date .text span {
     color: #182803;
     font-family: "Kento-Light";
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 300;
-    line-height: 120%; /* 0.9rem */
+    line-height: 0;
+    margin-top: 2px;
     text-transform: uppercase;
 }
 
 .mobile-bottom .mobile-live-date .date span {
     color: #182803;
     font-family: "Kento-Regular";
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
     line-height: 120%; /* 1.2rem */
     text-transform: uppercase;
