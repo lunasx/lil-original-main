@@ -22,6 +22,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #faf6f5;
     color: #BFEA88;
     padding: 20px;
